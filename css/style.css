@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+}
+header {
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: #F23064;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+header img {
+  max-width: 15%;
+}
+.heroImg {
+  background-color: #FFFFFF;
+  padding: 100px 15px;
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color: #F23064;
+  color: white;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border-radius: 30px;
+  border-style: hidden;
+}
+footer {
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+  float: right;
+  color: #F23064;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+.heading {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 30px;
+}
+/* My UX Skills Section */
+.flexContainer {
+  display: flex;
+  padding: 60px 30px;
+}
+.flexContainer div {
+  width: 33%;
+  padding: 25px;
+}
+.flexContainer img {
+  max-height: 300px;
+}
+
+/* My Work Section */
+.myWork {
+  padding: 60px 30px;
+  padding-top: 0;
+  background-color: #FFFFFF;
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2"
+  "img3 content3"
+  ;
+}
+.workGrid img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img1, .img2, .img3, .content1, .content2, .content3 {
+  padding: 80px;
+}
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: #F23064;
+  font-weight: 300;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
+  color: #F23064;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #F23064;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #F23064;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #F23064;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #F23064;
+  font-weight: 600;
+}
+
+.meGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 400px;
+  grid-template-areas:
+  "content4 img4"
+  ;
+}
+.meGrid img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display:inline;
+}
+.img4 {
+  grid-area: img4;
+}
+.img4, .content4 {
+  padding: 80px;
+}
+.content4 {
+  grid-area: content4;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .flexContainer {
+    display: flex;
+    padding: 60px 30px;
+  }
+  .flexContainer div {
+    width: 100%;
+    padding: 15px;
+    font-size: 11px;
+  }
+  .flexContainer img {
+    max-height: 100px;
+  }
+  p {
+    font-size: 11px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  .img1, .img2, .img3, .content1, .content2, .content3 {
+    padding: 20px;
+  }
+  .myWork {
+    padding: 30px 10px;
+  }
+  .workGrid {
+    grid-template-rows: 150px 150px 150px;
+  }
+  .workGrid img {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+  .meGrid {
+    grid-template-rows: 200px;
+  }
+  .meGrid img {
+    width: 100%;
+    max-width: 200px;
+  }
+  .img4, .content4 {
+    padding: 20px;
+  }
+  button {
+    padding: 5px;
+    font-size: 11px;
+    font-weight: 400;
+    border-radius: 20px;
+  }
+}
+
