@@ -171,6 +171,7 @@ h1 {
 }
 .img4 {
   grid-area: img4;
+  width: 70%;
 }
 .img4, .content4 {
   padding: 80px;
